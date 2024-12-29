@@ -1,2 +1,490 @@
-# exam-codes-
-exam codes 123459
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+<meta charset="UTF-8">  
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>My First Web Page</title> 
+</head>  
+<body>  
+<h1>This is Heading 1</h1>  
+<h2>This is Heading 2</h2>  
+<h3>This is Heading 3</h3>  
+<h4>This is Heading 4</h4>  
+<h5>This is Heading 5</h5>  
+<h6>This is Heading 6</h6> 
+<marquee>Basic HTML Tags</marquee>  
+ 
+<p>This is a paragraph. It demonstrates the use of the paragraph tag in  
+HTML. Paragraphs are used to group related content together.</p>  <hr>  
+<p>This is another paragraph.<br>This text appears on a new line due to the  line break tag.</p>  
+<blockquote>  
+This is a block quote. It's often used to highlight quoted text from another  source.  </blockquote>  
+<pre>  
+This is preformatted text.  It preserves both spaces and  line breaks, making it useful  for displaying code or ASCII art.  
+</pre>  
+<p>  
+Here are examples of logical styles:<br>  
+<b>Bold text</b><br>  
+<i>Italic text</i><br>  
+<u>Underlined text</u><br> 
+<strong>Strong text</strong><br>  
+        <em>Emphasized text</em><br>  
+        Text with <sub>subscript</sub> and <sup>superscript</sup>  
+    </p>  
+</body>  
+</html>
+2.
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">     <title>Time Table</title> 
+</head> 
+<body> 
+    <h1 style="text-align: center;">Time Table</h1> 
+     
+    <table border="1" style="width: 80%; margin: auto;" cellpadding="10">         <thead> 
+            <tr> 
+                <th colspan="7" style="text-align: center;">Class Time Table</th> 
+            </tr> 
+            <tr style="background-color: lightgray;"> 
+                <th>Day/Time</th> 
+                <th>9:00 AM - 10:00 AM</th> 
+                <th>10:00 AM - 11:00 AM</th> 
+                <th>11:00 AM - 12:00 PM</th> 
+                <th>12:00 PM - 1:00 PM</th> 
+                <th>Lunch Break</th> 
+                <th>2:00 PM - 3:00 PM</th> 
+            </tr> 
+        </thead> 
+       
+        <tbody> 
+            <tr> 
+                <td style="background-color: lightblue;">Monday</td> 
+                <td>Math</td> 
+                <td>Physics</td> 
+                <td style="background-color: lightcoral;" colspan="2">Lab</td> 
+                <td rowspan="5" style="background-color: lightyellow;">Lunch Break</td>                 <td>English</td> 
+            </tr> 
+            <tr> 
+                <td style="background-color: lightblue;">Tuesday</td> 
+                <td style="background-color: lightgreen;">Elective</td> 
+                <td>Chemistry</td> 
+                <td>Biology</td> 
+                <td>Math</td> 
+                <td style="background-color: lightcoral;">Lab</td> 
+            </tr> 
+            <tr> 
+                <td style="background-color: lightblue;">Wednesday</td> 
+                <td>Physics</td> 
+                <td>Math</td> 
+                <td>English</td> 
+                <td>Chemistry</td> 
+                <td>History</td> 
+            </tr> 
+            <tr> 
+                <td style="background-color: lightblue;">Thursday</td> 
+                <td>Biology</td> 
+                <td>Math</td> 
+                <td style="background-color: lightgreen;" colspan="2">Elective</td> 
+                <td>Physics</td> 
+            </tr> 
+            <tr> 
+                <td style="background-color: lightblue;">Friday</td> 
+                <td>History</td> 
+                <td>Chemistry</td> 
+                <td>English</td> 
+                <td>Biology</td> 
+                <td style="background-color: lightcoral;">Lab</td> 
+            </tr> 
+        </tbody>         <tfoot> 
+            <tr> 
+                <td colspan="7" style="text-align: center;">End of Week</td> 
+            </tr> 
+        </tfoot> 
+    </table> 
+</body> 
+</html>
+3.
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Styling sheet</title>  
+    <link rel="stylesheet" href="style.css">  
+</head>  
+<body>  
+    <main id="main-content">  
+        <h2>Welcome to Our Styled Page</h2>  
+ 
+<p>This is a paragraph right after an h2. It demonstrates the adjacent  sibling selector.</p>  
+<h3>Hover over me!</h3>  
+<hr>  
+<p lang="en">This paragraph has a lang attribute, demonstrating the  attribute selector.</p>  
+<section>  
+<p>Here's a <span class="highlight">highlighted</span> word using the  class selector.</p>  
+<p>This paragraph is inside a section, showing the descendant  selector.</p>  
+<span>This span is a direct child of the section.</span>  
+</section>  
+ 
+<p>The current date and time: <time datetime="2023-08-31">August 31,  2023</time></p>  
+<p>Notice how the first letter of each paragraph is styled differently.</p>  
+<article class="special">  
+<p>This paragraph is inside an article with class="special".</p>  </article>  
+<img src="https://motionbgs.com/media/216/zoro-purgatory-onigiri.jpg" alt="A placeholder  image">  
+<p>Check out this <a href="https://searchcreators.org/">link</a> to see  different link states.</p>  
+</main>  
+</body>  
+</html> 
+ 
+style.css file 
+/* Element Selector */  
+ 
+h2 {      color: #2c3e50;      font-family: 'Arial', sans-serif;      border-bottom: 2px solid #3498db;  
+    padding-bottom: 10px;  
+    }  
+    /* Element Selector with Pseudo-class */  
+    h3:hover {      color: #e74c3c;      cursor: pointer;  
+     
+    transition: color 0.3s ease;  
+    } 
+    /* Element Selector */      hr {      border: 0;      height: 1px;      width: 800px;     border: dashed; 
+    }  
+    /* Element Selector with Attribute */  
+    p[lang] {      font-style: italic;  
+    }  
+    /* Class Selector */      .highlight {      background-color: #f1c40f;  
+    padding: 5px;  
+    }  
+     
+    /* ID Selector */      #main-content {      max-width: 800px;      margin: 0 auto;      padding: 20px;      background-color: #c5f4cf;  
+    }  
+    /* Descendant Selector */      div p {      line-height: 1.6;  
+    margin-bottom: 15px;  
+    }  
+    /* Child Selector */      div > span {      font-weight: bold;      color: #16a085;  
+    }  
+    
+    /* Adjacent Sibling Selector */  
+    h2 + p {      font-size: 1.1em;  
+    color: #7f8c8d;  
+    }  
+    /* Attribute Selector */      time[datetime] {      color: #8e44ad;  
+    font-weight: bold;  
+    }  
+    /* Pseudo-element Selector */      p::first-letter {      font-size: 1.5em;      font-weight: bold;  
+    color: #c0392b;  
+   
+    }  
+    /* Multiple Selectors */      img, a {      border: 1px solid #bdc3c7;      padding: 5px;      width:400px; 
+    }  
+    /* Pseudo-class Selector for Links */      a:link, a:visited {      color: #dd10f4;      text-decoration: none;  
+    }      a:hover, a:active {      color: #e74c3c;  
+    text-decoration: underline;  
+    }  
+    /* Attribute Selector for Images */  
+    img[alt] {  
+    
+    max-width: 100%;  
+    height: auto;  
+    }  
+    /* Combining Selectors */      div.special p {      text-indent: 20px;      color: #27ae60;  }
+4.
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">   <title>Registration Page</title> 
+  <style> 
+    /* Basic reset for margin and padding */ 
+    * {       margin: 0;       padding: 0; 
+      box-sizing: border-box; 
+    } 
+ 
+    /* Body styling */     body {       font-family: Arial, sans-serif;       background-color: #f0f8ff; 
+      color: #333;       display: flex;       justify-content: center;       align-items: center; 
+      height: 100vh; 
+    } 
+ 
+    /* Form styling */     .registration-form {       background-color: #fff;       padding: 20px;       border-radius: 8px; 
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    } 
+ 
+    h2 { 
+      color: #4CAF50;       font-size: 24px; 
+      margin-bottom: 15px; 
+    } 
+ 
+    table {       width: 100%; 
+    } 
+   td {      padding: 8px;      font-size: 16px; 
+      color: #333; 
+    } 
+ 
+    input[type="text"],     input[type="email"],     input[type="password"],     input[type="date"],     select {       width: 100%;       padding: 8px;       border: 1px solid #ccc;       border-radius: 4px; 
+      font-size: 14px; 
+    } 
+ 
+    input[type="submit"] {       background-color: #4CAF50;       color: white;       border: none;       padding: 10px 20px;       font-size: 16px;       border-radius: 4px;       cursor: pointer; 
+    } 
+ 
+    input[type="submit"]:hover {       background-color: #45a049; 
+    } 
+ 
+    /* Styling labels */     label {       font-weight: bold; 
+    } 
+  </style> 
+</head> 
+<body> 
+ 
+  <div class="registration-form"> 
+    <h2>Registration Form</h2> 
+    <form action="#" method="post"> 
+      <table> 
+       <tr> 
+         <td><label for="name">Full Name:</label></td> 
+         <td><input type="text" id="name" name="name" required></td> 
+       </tr> 
+        <tr> 
+          <td><label for="email">Email:</label></td> 
+          <td><input type="email" id="email" name="email" required></td> 
+        </tr> 
+        <tr> 
+          <td><label for="password">Password:</label></td> 
+          <td><input type="password" id="password" name="password" required></td> 
+        </tr> 
+        <tr> 
+          <td><label for="dob">Date of Birth:</label></td> 
+          <td><input type="date" id="dob" name="dob"></td> 
+        </tr> 
+        <tr> 
+          <td><label for="State">State:</label></td> 
+          <td> 
+            <select id="state" name="State"> 
+              <option value="Maharashtra">Maharashtra</option> 
+              <option value="Karnataka">Karnataka</option> 
+              <option value="Tamil Nadu">Tamil Nadu</option> 
+            </select> 
+          </td> 
+        </tr> 
+        <tr> 
+  <td><label for="gender">Gender:</label></td> 
+  <td> 
+    <input type="radio" id="male" name="gender" value="male"> 
+    <label for="male">Male</label> 
+     
+    <input type="radio" id="female" name="gender" value="female"> 
+    <label for="female">Female</label> 
+     
+    <input type="radio" id="other" name="gender" value="other"> 
+    <label for="other">Other</label> 
+  </td> 
+</tr> 
+        <tr> 
+          <td><label for="phone">Phone Number:</label></td> 
+          <td><input type="text" id="phone" name="phone" required></td> 
+        </tr> 
+        <tr> 
+          <td><label for="address">Address:</label></td> 
+         <td><input type="text" id="address" name="address"></td> 
+       </tr> 
+       <tr> 
+         <td colspan="2" style="text-align: center;"> 
+            <input type="submit" value="Register"> 
+          </td> 
+        </tr> 
+      </table> 
+    </form> 
+  </div> 
+</body> 
+</html>
+5.
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Newspaper</title> 
+  <style> 
+    /* General page styling */     body { 
+      font-family: Arial, sans-serif;       line-height: 1.6;       margin: 0;       padding: 0; 
+      background-color: #f0f0f0; 
+      color: #333; 
+    } 
+ 
+    /* Header styling */     header { 
+      background-color: #333;       color: #fff;       padding: 1em;       text-align: center; 
+    } 
+ 
+    /* Footer styling */     footer { 
+      background-color: #333;       color: #fff;       padding: 1em;       text-align: center; 
+      font-size: 0.9em; 
+    } 
+ 
+    /* Section styling */     section {       padding: 2em;       background-color: #fff;       margin: 1em; 
+    } 
+ 
+    /* Article styling */     article {       background-color: #e3f2fd;       color: #0056b3;       padding: 1em;       margin-bottom: 1em; 
+      border-radius: 8px; 
+    } 
+ 
+    /* Aside styling */     aside {       background-color: #ffeb3b;       color: #333;       padding: 1em;       margin: 1em;       border-radius: 8px; 
+    } 
+ 
+    /* Figure styling */     figure {       margin: 1em 0;       text-align: center; 
+    } 
+     
+    figure img {       width: 100%;       max-width: 300px; 
+      border: 2px solid #333; 
+    } 
+ 
+    figcaption {       font-size: 0.9em; 
+      color: #555; 
+    } 
+ 
+    /* Table styling */     table {       width: 100%;       border-collapse: collapse; 
+      margin: 1em 0; 
+    } 
+ 
+    th, td {       padding: 0.5em;       text-align: left;       border: 1px solid #ddd; 
+    } 
+ 
+    th { 
+      background-color: #2196f3;       color: #fff; 
+    } 
+  </style> 
+</head> 
+<body> 
+ 
+  <!-- Header --> 
+  <header> 
+    <h1>Newspaper Layout</h1> 
+    <p>A simple newspaper layout using semantic HTML elements</p>   </header> 
+ 
+  <!-- Main Section --> 
+  <section> 
+    <h2>Welcome to the Newspaper Section</h2> 
+    <p>This is the main section of the newspaper layout where articles and news content are displayed.</p> 
+ 
+    <!-- Article --> 
+    <article> 
+      <h3>Breaking News: Technology Advances</h3> 
+      <p>Recent advances in technology have led to groundbreaking developments in various fields, including AI, robotics, and more.</p> 
+    </article> 
+ 
+    <!-- Another Article --> 
+    <article> 
+      <h3>Health Update: Staying Fit</h3> 
+      <p>Experts emphasize the importance of regular exercise and a balanced diet in maintaining a healthy lifestyle.</p> 
+    </article> 
+ 
+    <!-- Figure with Caption --> 
+    <figure> 
+      <img src="C:\Users\Tejas\Pictures\Wallpapers\1276191.png" alt="Sample Image">       <figcaption>Figure 1: Sample Image in Newspaper Layout</figcaption>     </figure> 
+ 
+    <!-- Aside --> 
+    <aside> 
+      <h4>Did You Know?</h4> 
+      <p>Many tech companies are investing heavily in AI to stay ahead in the market. AI is expected to transform industries globally.</p> 
+    </aside> 
+ 
+    <!-- Table --> 
+    <table> 
+      <thead> 
+        <tr> 
+          <th>Headline</th> 
+          <th>Category</th> 
+          <th>Date</th> 
+        </tr> 
+      </thead> 
+      <tbody> 
+        <tr> 
+          <td>Tech Trends in 2024</td> 
+          <td>Technology</td> 
+          <td>November 6, 2024</td> 
+        </tr> 
+        <tr> 
+          <td>Maintaining Mental Health</td> 
+          <td>Health</td> 
+          <td>November 5, 2024</td> 
+        </tr> 
+      </tbody> 
+    </table> 
+ 
+  </section> 
+ 
+  <!-- Footer --> 
+  <footer> 
+    <p>&copy; 2024 Newspaper. All Rights Reserved.</p> 
+  </footer> 
+ 
+</body> 
+</html>
+9.
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>jQuery Task</title> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+    <style>         body { 
+            font-family: Arial, sans-serif;             margin: 20px;             padding: 0; 
+            background-color: #f9f9f9; 
+        } 
+        .container {             max-width: 600px;             margin: 0 auto;             padding: 20px;             background: #fff;             border: 1px solid #ddd; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+        }         p, ul { 
+            margin: 10px 0; 
+        }         button { 
+            margin: 10px 5px;             padding: 8px 15px;             background-color: #007bff; 
+            color: #fff;             border: none;             cursor: pointer; 
+            border-radius: 4px; 
+        } 
+        button:hover { 
+            background-color: #0056b3; 
+        } 
+        .box {             width: 100px;             height: 100px;             margin: 20px auto;             background-color: #f4b400;             position: relative; 
+        } 
+    </style> 
+</head> 
+<body> 
+    <div class="container"> 
+        <h1>jQuery Demo</h1> 
+        <p>This is an existing paragraph.</p> 
+        <ul> 
+            <li>First item</li> 
+            <li>Second item</li> 
+        </ul> 
+        <button id="append-btn">Append Content</button> 
+        <button id="animate-btn">Animate Box</button> 
+        <button id="change-color-btn">Change Box Color</button> 
+        <div class="box"></div> 
+    </div> 
+    <script> 
+ 
+$(document).ready(function () { 
+    // a. Append content to paragraph and list 
+    $('#append-btn').click(function () { 
+        $('p').append(' This is appended content.'); 
+        $('ul').append('<li>New appended item</li>'); 
+    }); 
+ 
+    // b. Animate the box element 
+    $('#animate-btn').click(function () { 
+        $('.box').animate({             width: '200px',             height: '200px',             left: '50px' 
+        }, 1000, function () {             // Animation complete 
+            alert('Animation complete!'); 
+        }); 
+    }); 
+ 
+    // c. Change color of the animated box 
+    $('#change-color-btn').click(function () { 
+        $('.box').css('background-color', '#28a745'); 
+    }); 
+}); 
+ 
+    </script> 
+</body> 
+</html>
